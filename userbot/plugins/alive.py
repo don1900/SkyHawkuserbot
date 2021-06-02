@@ -78,19 +78,17 @@ async def amireallyalive(alive):
     if Skyhawk_IMG:
         Skyhawk_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         
-        Skyhawk_caption += f"      __**╚»★BOT INFO★«╝**__\n"
-        Skyhawk_caption += f"**╭────────☆═━┈┈┈━═☆───────╮**\n"
-        Skyhawk_caption += f"**※┄┄➳ BOT OWNER:** ** {mention} **\n"
-        Skyhawk_caption += f"**※┄┄➳ BOT STATUS : WORKING NORMALLY **\n"
-        Skyhawk_caption += f"**※┄┄➳ YOUR BOT VERSION :**`{Skyhawkversion}`\n"
-        Skyhawk_caption += f"**※┄┄➳ SECURITY STATUS : NO BUGS **\n"
-        Skyhawk_caption += f"**※┄┄➳ TELETHON VERSION : ** `{version.__version__}`\n"
-        Skyhawk_caption += f"**※┄┄➳ UPTIME :** `{uptime}`\n"
-        Skyhawk_caption += f"**※┄┄➳ SUDO STATUS :** `{sudou}`\n"
-        Skyhawk_caption += f"**※┄┄➳ DEVELOPER STATUS : ACTIVE** \n"
-        Skyhawk_caption += f"**※┄┄➳ CREATOR :** ** [🇮🇳• FURIOUS-XY •🇮🇳](https://t.me/furious_x_y)**\n"
-        Skyhawk_caption += f"**╰────────☆═━┈┈┈━═☆───────╯**\n"
-        Skyhawk_caption += "[✨𝚁𝙴𝙿𝙾✨](https://github.com/FURIOUS-XY/Skyhawk-userbot) 🔹 [📜𝙻𝙸𝙲𝙴𝙽𝚂𝙴📜](https://github.com/FURIOUS-XY/Skyhawk-userbot/blob/master/LICENSE)"
+        Skyhawk_caption += f" *SkyHawk 🦅 IS WORKING PERFECTLY\n\n*
+        Skyhawk_caption += f"      __**🔥 SkyHawk SYSTEM 🔥**__\n\n"
+        Skyhawk_caption += f"**BOT STATUS 👉 : ACTIVE **\n"
+        Skyhawk_caption += f"**BOT VERSION 👉 :**`{Skyhawkversion}`\n"
+        Skyhawk_caption += f"**TELETHON VERSION 👉 : ** `{version.__version__}`\n"
+        Skyhawk_caption += f"**UPTIME 👉 :** `{uptime}`\n"
+        Skyhawk_caption += f"**SUDO STATUS :** `{sudou}`\n"
+        Skyhawk_caption += f"**SUPPORT GROUP 👉 :** [🇮🇳• ᴊᴏɪɴ •🇮🇳](https://t.me/SkyHawkSupport)**\n"
+        Skyhawk_caption += f"**MY MASTER 👉 :** {mention}\n"
+        Skyhawk_caption += f"**LICENSE]👉 :** [🇮🇳• SkyHawk •🇮🇳](https://github.com/don1900/SkyHawk/blob/main/LICENSE)**\n\n"
+        Skyhawk_caption += "[🔥REPO🔥](https://github.com/don1900/SkyHawk)"
 
         await alive.client.send_file(
             alive.chat_id, Skyhawk_IMG, caption=Skyhawk_caption, reply_to=reply_to_id
@@ -99,22 +97,20 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"     __**╚»★BOT INFO★«╝**__\n"
-            f"**╭────────☆═━┈┈┈━═☆───────╮**\n"
-            f"**※┄┄➳ BOT STATUS : WORKING NORMALLY **\n"
-            f"**※┄┄➳ YOUR BOT VERSION :**`{Skyhawkversion}`\n"
-            f"**※┄┄➳ SECURITY STATUS : NO BUGS AND ERRORS **\n"
-            f"**※┄┄➳ TELETHON VERSION : ** `{version.__version__}`\n"
-            f"**※┄┄➳ UPTIME :** `{uptime}`\n"
-            f"**※┄┄➳ SUDO STATUS :** `{sudou}`\n"
-            f"**※┄┄➳ DEVELOPER STATUS : ACTIVE** \n"
-            f"**※┄┄➳ CREATOR :** [🇮🇳• FURIOUS-XY •🇮🇳](https://t.me/furious_x_y)**\n"
-            f"**※┄┄➳ MASTER:** {mention}\n"
-            f"**╰────────☆═━┈┈┈━═☆───────╯**\n"
-            "[✨REPO✨](https://github.com/FURIOUS-XY/Skyhawk-userbot) 🔹 [📜LICENSE📜](https://github.com/FURIOUS-XY/Skyhawk-userbot/blob/master/LICENSE)",
-        )
+            f" *SkyHawk 🦅 IS WORKING PERFECTLY\n\n*
+            f"      __**🔥 SkyHawk SYSTEM 🔥**__\n\n"
+            f"**BOT STATUS 👉 : ACTIVE **\n"
+            f"**BOT VERSION 👉 :**`{Skyhawkversion}`\n"
+            f"**TELETHON VERSION 👉 : ** `{version.__version__}`\n"
+            f"**UPTIME 👉 :** `{uptime}`\n"
+            f"**SUDO STATUS :** `{sudou}`\n"
+            f"**SUPPORT GROUP 👉 :** [🇮🇳• ᴊᴏɪɴ •🇮🇳](https://t.me/SkyHawkSupport)**\n"
+            f"**MY MASTER 👉 :** {mention}\n"
+            f"**LICENSE]👉 :** [🇮🇳• SkyHawk •🇮🇳](https://github.com/don1900/SkyHawk/blob/main/LICENSE)**\n\n"
+            "[🔥REPO🔥](https://github.com/don1900/SkyHawk)"
+ 
 CmdHelp("alive").add_command(
   'alive', None, 'Check weather the bot is alive or not'
   ).add_info(
-  'Zinda Hai Kya Bro?'
+  'ARE YOU ALIVE?'
 ).add()
