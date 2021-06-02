@@ -1,6 +1,6 @@
 '''Profile Updating Commands
 .pbio <Enter The Bio You Want To Put> 
-.pname <Enter The Bio You Want To Put>
+.pname <Enter The Name You Want To Put>
 .ppic 
 '''
 
