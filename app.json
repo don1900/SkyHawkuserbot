@@ -29,12 +29,12 @@
     },
     "ALIVE_MSG": {
       "description": "Set Custom Alive Message When entering .alive Command.",
-      "value": "YOUR Skyhawk USERBOT IS ON !",
+      "value": "Skyhawk USERBOT IS ON !",
       "required": false
     },
     "ALIVE_PIC": {
       "description": "Put here any telegraph media link for alive pic in .alive command.",
-      "value": "https://telegra.ph/file/19394b52001265d943584.mp4",
+      "value": "https://telegra.ph/file/0fcde87dc3fd1d7b6dfe5.mp4",
       "required": false
     },
     "BIO_MSG": {
