@@ -27,7 +27,7 @@ IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
-RESTARTING_APP = "re-starting heroku application"
+RESTARTING_APP = "re-starting your application"
 # -- Constants End -- #
 
 
