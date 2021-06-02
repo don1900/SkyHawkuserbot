@@ -2,9 +2,9 @@ import os
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from heroku_config import Var as SampleConfig
+    from heroku_config import Var as ExampleConfig
 else:
-    from local_config import Development as SampleConfig
+    from config.py import Development as ExampleConfig
 
 
-Var = SampleConfig
+Var = ExampleConfig
