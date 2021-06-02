@@ -54,8 +54,8 @@ import userbot._core
 
 print(f"""SkyhawkBot IS ON!!! SkyhawkBot VERSION :- {Skyhawkversion}
 JOIN OFFICIAL CHAT GROUP AND UPDATES CHANNEL
-OFFICIAL GROUP :- @furious_x_y
-OFFICIAL CHANNEL :- @furious_x_y
+OFFICIAL GROUP :- @SkyHawkSupport
+OFFICIAL CHANNEL :- @SkyHawK_Updates
 DO .alive OR .ping CHECK IF I'M ON!
 IF YOU FACE ANY ISSUE THEN ASK AT CHAT GROUP.""")
 
