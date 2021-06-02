@@ -1,60 +1,23 @@
-from telethon.sessions import StringSession
 from telethon.sync import TelegramClient
-import random
-from colorama import Fore, Style, Back
+from telethon.sessions import StringSession
 
 
-Skyhawk= """
-MY SkyhawkBOT !!
-"""
-logo = """
-┈┈┈╲┈┈┈┈╱
-┈┈╱▔▔▔▔╲
-┈┈┃┈▇┈┈▇┈┃
-╭╮┣━━━━━━┫╭╮
-┃┃┃┈┈┈┈┈┈┃┃┃
-╰╯┃┈┈┈┈┈┈┃╰╯
-┈┈╰┓┏━━┓┏╯
-┈┈┈╰╯┈┈╰╯
+print("Hey!,Welcome to SkyHawk Userbot String Generator\n\nBy @always_don")
+print("\n🔥 SkyHawk Userbot 🔥\n\nProperly Enter Your Details.\n")
 
-"""
-baap_bolte = """
-#Legendary SkyhawkBot          
-Made With Love By Team SkyhawkBot
-"""
-                                                                                                            
-print("")
-print(Style.BRIGHT + Fore.MAGENTA + Skyhawk)
-print(Style.RESET_ALL)
-print(Style.BRIGHT + Fore.BLUE + logo)
-print(Style.RESET_ALL)
-print(Style.BRIGHT + Fore.CYAN + Back.BLUE + baap_bolte)
-print(Style.RESET_ALL)
-print("""Welcome To SkyhawkBot String Generator By ITS SECRET""")
-print("""Kindly Enter Your Details To Continue ! """)
+from telethon.sync import TelegramClient
+from telethon.sessions import StringSession
+try:
+  API_ID = int(input("Enter Your API ID here: "))
+  API_HASH = input("\nEnter Your API HASH here: ")
+  with TelegramClient(StringSession(), API_ID, API_HASH) as SkyHawk:
+    SkyHawksession = SkyHawk.session.save()
 
-API_KEY = input("API_KEY: ")
-API_HASH = input("API_HASH: ")
+    SkyHawk = SkyHawk.send_message("me",f"\n\n😎Your String Session Here👇\n\n```{SkyHawksession}```\n\n🔥🔥🔥Tap It To Copy🔥🔥🔥\n        **Regards @always_don**")
 
-while True:
-    try:
-        with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
-            print("String Sent To Your Saved Message, Store It To A Safe Place!! ")
-            print("")
-            session = client.session.save()
-            client.send_message(
-                "me",
-                f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit hell For Any Help !",
-            )
 
-            print(
-                "Thanks for Choosing SkyhawkBot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
-            )
-    except:
-        print("")
-        print(
-            "Wrong phone number \n make sure its with correct country code. Example : +919811099999 ! Kindly Retry"
-        )
-        print("")
-        continue
-    break
+  print("\n\nWe Have Sent Your String Session At Your Saved Message Check It Out.\n\n            NOTE:Store It In A Safe Place!")
+
+except :
+    print("\nThe Details You Provided Were Wrong \nPlease Try Again")
+   
