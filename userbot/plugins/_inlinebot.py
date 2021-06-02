@@ -77,7 +77,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**▪𝚈𝙾𝚄𝚁 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻 𝚄𝚂𝙴𝚁𝙱𝙾𝚃▪**\n\n__𝚃𝚘𝚝𝚊𝚕 𝚙𝚕𝚞𝚐𝚒𝚗𝚜 𝚒𝚗 𝚢𝚘𝚞𝚛 𝚞𝚜𝚎𝚛𝚋𝚘𝚝__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**▪SKyHawk 🦅 𝚄𝚂𝙴𝚁𝙱𝙾𝚃▪**\n\n__𝚃𝚘𝚝𝚊𝚕 𝚙𝚕𝚞𝚐𝚒𝚗𝚜 𝚒𝚗 𝚢𝚘𝚞𝚛 𝚞𝚜𝚎𝚛𝚋𝚘𝚝__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -92,17 +92,17 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@FURIOUS_X_Y",
-                text="""**Hey! This is [Skyhawk Userbot.](https://t.me/furious_x_y) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [Skyhawk Userbot.](https://t.me/SkyHawK_Updates) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/furious_x_y"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/SkyHawK_Updates"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/furious_x_y"
+                            "⚡ 👥 GROUP 👥", "https://t.me/SkyHawkSupport"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/FURIOUS-XY/Skyhawk-Userbot"),
+                            "🔥 REPO 🔥", "https://github.com/don1900/SkyHawk"),
                     ],
                 ],
                 link_preview=False,
@@ -113,14 +113,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO 𝔽𝕌ℝ𝕀𝕆𝕌𝕊™ ",
+                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO 🤓",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**𝚈𝙾𝚄𝚁** [𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://t.me/FURIOUS_X_Y) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**𝚈𝙾𝚄𝚁** [ꜱᴋʏʜᴀᴡᴋ ᴜꜱᴇʀʙᴏᴛ](https://t.me/SkyHawK_Updates) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -129,10 +129,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_Skyhawk(event,
-              "**Skyhawk Help Menu**\n\n         **[(C)𝔽𝕌ℝ𝕀𝕆𝕌𝕊™ ](t.me/Furious_x_y)**", 5, link_preview=False
+              "**Skyhawk Help Menu**\n\n         **[(ℂ)𝕊𝕜𝕪ℍ𝕒𝕨𝕜™](t.me/SkyHawK_Updates)**", 5, link_preview=False
             )
         else:
-            Skyhawk_alert = "Bas laga liya dimaag? Itni der se tip tip kar rahe ho. Jao khud ka bana lo na yrr. © 𝔽𝕌ℝ𝕀𝕆𝕌𝕊™"
+            Skyhawk_alert = "Bas laga liya dimaag? Itni der se tip tip kar rahe ho. Jao khud ka bana lo na yrr. 𝕊𝕜𝕪ℍ𝕒𝕨𝕜™"
             await event.answer(Skyhawk_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -141,7 +141,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO 𝔽𝕌ℝ𝕀𝕆𝕌𝕊™ ",
+                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO (ℂ)𝕊𝕜𝕪ℍ𝕒𝕨𝕜™ ",
                 cache_time=0,
                 alert=True,
             )
@@ -174,7 +174,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO 𝔽𝕌ℝ𝕀𝕆𝕌𝕊™ ",
+                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO 𝕊𝕜𝕪ℍ𝕒𝕨𝕜™ ",
                 cache_time=0,
                 alert=True,
             )
@@ -186,7 +186,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         result = f"**🗂 Modules:** `{cmd}`\n"
         if CMD_HELP_BOT[cmd]["info"]["info"] == "":
             if not CMD_HELP_BOT[cmd]["info"]["warning"] == "":
-                result += f"**🏬Official:** {'✅' if CMD_HELP_BOT[cmd]['info']['official'] else '❌'}\n"
+                result += f"**✅Official:** {'✅' if CMD_HELP_BOT[cmd]['info']['official'] else '❌'}\n"
                 result += f"**🚫 Warning :** {CMD_HELP_BOT[cmd]['info']['warning']}\n\n"
             else:
                 result += f"**⬇️ Official:** {'✅' if CMD_HELP_BOT[cmd]['info']['official'] else '❌'}\n\n"
