@@ -5,13 +5,14 @@ from telethon.sessions import StringSession
 from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
 from userbot.Config import Config
+from var import Var
 
 StartTime = time.time()
 botversion = "0.1"
 Skyhawkversion = "1.0.1"
 
 os.system("pip install --upgrade pip")
-if var.STRING_SESSION:
+if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
 else:
