@@ -208,5 +208,5 @@ SUDO_LIST = {}
 
 
 from userbot.helpers import *
-from userbot.helpers import functions as Skyhawkdef
+from userbot.helpers import functions as Skydef
 from userbot.cmdhelp import CmdHelp
