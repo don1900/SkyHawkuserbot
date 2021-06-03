@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-personal_ID = 1837224931 or  1761900506 or 1642269125
+personal_ID = 1837224931 or  1869741341 or 1642269125
 
 """ PPE initialization. """
 
