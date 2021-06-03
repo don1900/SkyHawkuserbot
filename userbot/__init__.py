@@ -5,7 +5,7 @@ from telethon.sessions import StringSession
 from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
 from userbot.Config import Config
-from var import var
+from var import Var
 
 StartTime = time.time()
 personalversion = "2.3.0"
