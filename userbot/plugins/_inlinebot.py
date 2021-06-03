@@ -52,13 +52,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"{Skyhawk_emoji} ⬅️𝙱𝙰𝙲𝙺 {Skyhawk_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"⬅️𝙱𝙰𝙲𝙺 {Skyhawk_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
                f"•{Skyhawk_emoji} ✖️𝙲𝙻𝙾𝚂𝙴✖️ {Skyhawk_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{Skyhawk_emoji} 𝙽𝙴𝚇𝚃➡️ {Skyhawk_emoji}", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{Skyhawk_emoji} 𝙽𝙴𝚇𝚃➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
