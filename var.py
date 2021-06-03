@@ -6,6 +6,6 @@ if ENV:
     from sample_config import Var as Config
 else:
     if os.path.exists("config.py"):
-        from config import Development as Var
+        from config import Development as Config
 
 Var = Config
