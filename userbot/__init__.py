@@ -5,11 +5,11 @@ from telethon.sessions import StringSession
 from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
 from userbot.Config import Config
-
+from var import Var
 
 StartTime = time.time()
+personalversion = "2.3.0"
 botversion = "0.1"
-Skyhawkversion = "1.0.1"
 
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-Skyhawk_ID = 1837224931 or  1761900506 or 1642269125
+personal_ID = 1837224931 or  1761900506 or 1642269125
 
 """ PPE initialization. """
 
@@ -149,7 +149,7 @@ except:
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Harsh-78/SkyhawkBot.git")
+    "https://github.com/Harsh-78/personalBot.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -208,5 +208,5 @@ SUDO_LIST = {}
 
 
 from userbot.helpers import *
-from userbot.helpers import functions as Skydef
+from userbot.helpers import functions as personaldef
 from userbot.cmdhelp import CmdHelp
