@@ -7,3 +7,5 @@ if ENV:
 else:
     if os.path.exists("config.py"):
         from config import Development as Var
+
+Var = Config
