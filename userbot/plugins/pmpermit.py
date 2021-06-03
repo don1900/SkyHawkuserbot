@@ -20,7 +20,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 SkyhawkPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/62b6e6a1bb6ed711401ce.jpg"
+    else "https://telegra.ph/file/1b91726f3294921d593e6.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
