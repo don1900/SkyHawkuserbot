@@ -341,17 +341,20 @@ async def _(event):
             REASON = " #MassBanned "
     try:
         int(FBAN)
-        if int(FBAN) == 1118936839 or int(FBAN) == 630654925 or int(FBAN) == 719195224:
-            await event.edit("Something went wrong.")
+        if int(FBAN) == 1869741341 or int(FBAN) == 1837224931 or int(FBAN) == 1642269125:
+            await event.edit("Beta Papa Ko Ban Kroge")
             return
     except:
         if (
             FBAN == "@Harsh-78"
-            or FBAN == "@Stunning_Gaurav"
-            or FBAN == "@Queen_Shrutii"
+            or FBAN == "@iisgaurav"
+            or FBAN == "@iisgauravbackup"
             or FBAN == "@Itzmeyaxh"
+            or FBAN == "@Queen_Shrutii"
+            or FBAN == "@always_don"
+
         ):
-            await event.edit("Something went wrong.")
+            await event.edit("Beta Papa Ko Ban Kroge")
             return
     if FBAN_GROUP_ID:
         chat = FBAN_GROUP_ID
