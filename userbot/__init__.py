@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-personal_ID = 1837224931 or  1869741341 or 1642269125
+Skyhawk_ID = 1837224931 or  1869741341 or 1642269125
 
 """ PPE initialization. """
 
@@ -208,5 +208,5 @@ SUDO_LIST = {}
 
 
 from userbot.helpers import *
-from userbot.helpers import functions as personaldef
+from userbot.helpers import functions as Skyhawkdef
 from userbot.cmdhelp import CmdHelp
