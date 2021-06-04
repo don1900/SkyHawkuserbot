@@ -78,7 +78,7 @@ async def amireallyalive(alive):
     if Skyhawk_IMG:
         Skyhawk_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         
-        Skyhawk_caption += f" *SkyHawk 🦅 IS WORKING PERFECTLY\n\n*
+        Skyhawk_caption += f" **SkyHawk 🦅 IS WORKING PERFECTLY\n\n**"
         Skyhawk_caption += f"      __**🔥 SkyHawk SYSTEM 🔥**__\n\n"
         Skyhawk_caption += f"**BOT STATUS 👉 : ACTIVE **\n"
         Skyhawk_caption += f"**BOT VERSION 👉 :**`{Skyhawkversion}`\n"
@@ -97,7 +97,7 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f" *SkyHawk 🦅 IS WORKING PERFECTLY\n\n*
+            f" **SkyHawk 🦅 IS WORKING PERFECTLY**\n\n"
             f"      __**🔥 SkyHawk SYSTEM 🔥**__\n\n"
             f"**BOT STATUS 👉 : ACTIVE **\n"
             f"**BOT VERSION 👉 :**`{Skyhawkversion}`\n"
