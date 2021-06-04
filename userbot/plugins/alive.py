@@ -1,6 +1,7 @@
 import time
 from userbot import *
 from SkyhawkBot.utils import *
+from userbot import cmdhelp
 from userbot.cmdhelp import CmdHelp
 from telethon import events, version
 from telethon.events import NewMessage
@@ -108,9 +109,12 @@ async def amireallyalive(alive):
             f"**MY MASTER 👉 :** {mention}\n"
             f"**LICENSE]👉 :** [🇮🇳• SkyHawk •🇮🇳](https://github.com/don1900/SkyHawk/blob/main/LICENSE)**\n\n"
             "[🔥REPO🔥](https://github.com/don1900/SkyHawk)"
+        )
  
+ 
+
 CmdHelp("alive").add_command(
-  'alive', None, 'Check weather the bot is alive or not'
-  ).add_info(
-  'ARE YOU ALIVE?'
+ 'alive', None, 'Check weather the bot is alive or not'
+).add_info(
+ 'ARE YOU ALIVE?'
 ).add()
