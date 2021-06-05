@@ -85,17 +85,17 @@ async def amireallyalive(alive):
         Skyhawk_caption += f"**BOT VERSION 👉 :**`{Skyhawkversion}`\n"
         Skyhawk_caption += f"**TELETHON VERSION 👉 : ** `{version.__version__}`\n"
         Skyhawk_caption += f"**UPTIME 👉 :** `{uptime}`\n"
-        Skyhawk_caption += f"**SUDO STATUS :** `{sudou}`\n"
+        Skyhawk_caption += f"**SUDO STATUS 👉 :** `{sudou}`\n"
         Skyhawk_caption += f"**SUPPORT GROUP 👉 :** [🇮🇳• ᴊᴏɪɴ •🇮🇳](https://t.me/SkyHawkSupport)**\n"
         Skyhawk_caption += f"**MY MASTER 👉 :** {mention}\n"
-        Skyhawk_caption += f"**LICENSE]👉 :** [🇮🇳• SkyHawk •🇮🇳](https://github.com/don1900/SkyHawk/blob/main/LICENSE)**\n\n"
+        Skyhawk_caption += f"**LICENSE 👉 :** [🇮🇳• SkyHawk •🇮🇳](https://github.com/don1900/SkyHawk/blob/main/LICENSE)**\n\n"
         Skyhawk_caption += "[🔥REPO🔥](https://github.com/don1900/SkyHawk)"
 
         await alive.client.send_file(
             alive.chat_id, Skyhawk_IMG, caption=Skyhawk_caption, reply_to=reply_to_id
         )
     else:
-        await edit_or_reply(
+        await edit(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f" **SkyHawk 🦅 IS WORKING PERFECTLY**\n\n"
@@ -104,10 +104,10 @@ async def amireallyalive(alive):
             f"**BOT VERSION 👉 :**`{Skyhawkversion}`\n"
             f"**TELETHON VERSION 👉 : ** `{version.__version__}`\n"
             f"**UPTIME 👉 :** `{uptime}`\n"
-            f"**SUDO STATUS :** `{sudou}`\n"
+            f"**SUDO STATUS 👉 :** `{sudou}`\n"
             f"**SUPPORT GROUP 👉 :** [🇮🇳• ᴊᴏɪɴ •🇮🇳](https://t.me/SkyHawkSupport)**\n"
             f"**MY MASTER 👉 :** {mention}\n"
-            f"**LICENSE]👉 :** [🇮🇳• SkyHawk •🇮🇳](https://github.com/don1900/SkyHawk/blob/main/LICENSE)**\n\n"
+            f"**LICENSE 👉 :** [🇮🇳• SkyHawk •🇮🇳](https://github.com/don1900/SkyHawk/blob/main/LICENSE)**\n\n"
             "[🔥REPO🔥](https://github.com/don1900/SkyHawk)"
         )
  
