@@ -15,7 +15,4 @@ async def _(event):
                           🌺✨✨🌺✨🌺🌺🌺
                           ☁️☁️☁️☁️☁️☁️☁️☁️"""
                       
-CmdHelp("hi").add_command(
-  'hi', 'Gives A Hi Animation.'
-).add(
- 
+
