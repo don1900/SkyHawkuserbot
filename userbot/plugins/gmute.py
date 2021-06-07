@@ -10,11 +10,6 @@ from telethon import events
 async def blowjob(event):
     private = False
     
-    if user:
-        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
-            return await SkyhawkBot.edit(
-                f"`First Grow Some Balls To Gban My Creater🤫🚶`"
-            )    
 
     if event.fwd_from:
         return
@@ -46,6 +41,12 @@ async def blowjob(event):
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
         await edit_or_reply(event, "Successfully Fucked this user's mouth.")
+        
+            if user:
+        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
+            return await SkyhawkBot.edit(
+                f"`First Grow Some Balls To Gban My Creater🤫🚶`"
+            )    
 
 
 @bot.on(admin_cmd(pattern=r"ungmute ?(\d+)?"))
