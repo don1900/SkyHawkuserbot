@@ -15,7 +15,6 @@ async def blowjob(event):
     user_id = reply.sender_id
     if user_id == (await borg.get_me()).id:	
         await edit_or_reply(event, "I guess you need some rest. You are trying to gmute yourself😌")	
-        	
         return
     elif event.is_private:
         await edit_or_reply(event, "`Son can't speak now🤐. Filled mouth with cum`💦")
@@ -40,6 +39,12 @@ async def blowjob(event):
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
         await edit_or_reply(event, "Successfully Fucked this user's mouth.")
+        
+    if user:
+        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
+            return await SkyhawkBot.edit(
+                f"`First Grow Some Balls To Gmute My Creater🤫🚶`"
+            )
 
 
 @bot.on(admin_cmd(pattern=r"ungmute ?(\d+)?"))
@@ -70,6 +75,12 @@ async def cumshot(event):
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
         await edit_or_reply(event, "Ok! Today's sex is done now. Son can speak🔥🔥")
+        
+    if user:
+        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
+            return await SkyhawkBot.edit(
+                f"`First Grow Some Balls To Ungmute My Creater🤫🚶`"
+            )
         
 @command(incoming=True)
 async def watcher(event):
