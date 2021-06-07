@@ -9,8 +9,6 @@ from telethon import events
 @bot.on(sudo_cmd(pattern=r"gmute ?(\d+)?", allow_sudo=True))
 async def blowjob(event):
     private = False
-    
-
     if event.fwd_from:
         return
     reply = await event.get_reply_message()
@@ -41,25 +39,13 @@ async def blowjob(event):
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
         await edit_or_reply(event, "Successfully Fucked this user's mouth.")
-        
-            if user:
-        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
-            return await SkyhawkBot.edit(
-                f"`First Grow Some Balls To Gban My Creater🤫🚶`"
-            )    
+
 
 
 @bot.on(admin_cmd(pattern=r"ungmute ?(\d+)?"))
 @bot.on(sudo_cmd(pattern=r"ungmute ?(\d+)?", allow_sudo=True))
 async def cumshot(event):
     private = False
-    
-    if user:
-        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
-            return await SkyhawkBot.edit(
-                f"`How Can U Unmute My Creator First Try muting him🤫🚶`"
-            )    
-    
     if event.fwd_from:
         return
     elif event.is_private:
@@ -84,7 +70,13 @@ async def cumshot(event):
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
         await edit_or_reply(event, "Ok! Today's sex is done now. Son can speak🔥🔥")
-        
+            
+    if user:
+        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
+            return await SkyhawkBot.edit(
+                f"`How Can U Unmute My Creator First Try muting him🤫🚶`"
+            )    
+    
         
 @command(incoming=True)
 async def watcher(event):
