@@ -88,7 +88,7 @@ async def gban(userbot):
     except:
         return await SkyhawkBot.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id == 1837224931 or user.id == 1869741341 or user.id == 1642269125:
+        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
             return await SkyhawkBot.edit(
                 f"`First Grow Some Balls To Gban My Creater🤫🚶`"
             )
@@ -156,8 +156,10 @@ async def gunban(userbot):
     except:
         return await SkyhawkBot.edit("**Som3ting W3nt Wr0ng**")
     if user:
-        if user.id == 1837224931 or user.id == 1869741341 or user.id == 1642269125:
-            return await SkyhawkBot.edit("**You need to grow some balls to gban / ungban my creator**")
+        if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
+            return await SkyhawkBot.edit(
+                f"`First Grow Some Balls To Ungban My Creater🤫🚶`"
+            )
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
         except:
