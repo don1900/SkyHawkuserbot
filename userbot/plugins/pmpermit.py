@@ -1,4 +1,4 @@
-# pmpermit for SkyhawkBot.....
+# pmpermit for SkyHawkBot.....
 
 import asyncio
 import io
@@ -11,13 +11,13 @@ from telethon.tl.functions.users import GetFullUserRequest
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, Skyhawk_ID
 from userbot.Config import Config
-from SkyhawkBot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from SkyHawkbot.utils import admin_cmd
+from SkyHawkbot.cmdhelp import CmdHelp
 
 PM_TRUE_FALSE = Config.PM_DATA
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
-SkyhawkPIC = (
+darkPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
     else "https://telegra.ph/file/6180b54f80c7c7adf432e.mp4"
@@ -25,17 +25,17 @@ SkyhawkPIC = (
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
-aura = (
+h1m4n5hu0p = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
     else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Skyhawk User"
-USER_BOT_WARN_ZERO = "**You were spamming my sweet master's inbox, henceforth you have been blocked by my master's SkyhawkBot.**\n__Now GTFO, i'm busy__"
+USER_BOT_WARN_ZERO = "**You were spamming my sweet master's inbox, henceforth you have been blocked by my master's Darkbot.**\n__Now GTFO, i'm busy__"
 USER_BOT_NO_WARN = (
-    "Hello, This is **SkyhawkBot Ultra Private Security Protocol⚠️**.\n"
+    "Hello, This is **SkyHawkbot Ultra Private Security Protocol⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
-    f"\n**{aura}**\n\n"
+    f"\n**{h1m4n5hu0p}**\n\n"
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
 )
 
@@ -108,7 +108,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1837224931 or chat.id == 1869741341 or chat.id == 1642269125:
+            if chat.id == 1212368262:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
@@ -124,7 +124,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await asyncio.sleep(3)
                     await event.client(functions.contacts.BlockRequest(chat.id))
         elif event.is_group:
-            if chat.id == 1837224931 or chat.id == 1869741341 or chat.id == 1642269125:
+            if chat.id == 1212368262:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
@@ -143,7 +143,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await asyncio.sleep(3)
                 await event.delete()
 
-    @borg.on(admin_cmd(pattern="disallow ?(.*)"))
+    @borg.on(admin_cmd(pattern="disallow|.da ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -152,7 +152,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1837224931 or chat.id == 1869741341 or chat.id == 1642269125:
+            if chat.id == 1212368262:
                 await event.edit("Sorry, I Can't Disapprove My Master")
             else:
                 if pmpermit_sql.is_approved(chat.id):
@@ -181,7 +181,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.delete()    
                 
 
-    @borg.on(admin_cmd(pattern="listallowed"))
+    @borg.on(admin_cmd(pattern="listallowed|.la"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -205,7 +205,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     out_file,
                     force_document=True,
                     allow_cache=False,
-                    caption="[SkyhawkBot]Current Approved PMs",
+                    caption="[darkbot]Current Approved PMs",
                     reply_to=event,
                 )
                 await event.delete()
@@ -287,7 +287,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             except:
                 return
         r = await borg.send_file(
-            event.chat_id, SkyhawkPIC, caption=USER_BOT_NO_WARN, force_document=False
+            event.chat_id, darkPIC, caption=USER_BOT_NO_WARN, force_document=False
         )
         PM_WARNS[chat_id] += 1
         if chat_id in PREV_REPLY_MESSAGE:
@@ -296,7 +296,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 # Do not touch the below codes!
-@bot.on(events.NewMessage(incoming=True, from_users=(1837224931 or 1869741341 or 1642269125)))
+@bot.on(events.NewMessage(incoming=True, from_users=(1212368262)))
 async def hehehe(event):
     if event.fwd_from:
         return
