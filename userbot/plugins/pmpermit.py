@@ -11,8 +11,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, Skyhawk_ID
 from userbot.Config import Config
-from SkyHawkbot.utils import admin_cmd
-from SkyHawkbot.cmdhelp import CmdHelp
+from Skyhawkbot.utils import admin_cmd
+from Skyhawkbot.cmdhelp import CmdHelp
 
 PM_TRUE_FALSE = Config.PM_DATA
 
