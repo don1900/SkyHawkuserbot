@@ -40,7 +40,7 @@ async def _(event):
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
     if not font_:
-        fpath_ = glob.glob("resources/fonts/*")
+        fpath_ = glob.glob("SKyHawkuserbot/resources/fonts/*")
         font_ = random.choice(fpath_)
     if len(name) <= 8:
         fnt_size = 150
