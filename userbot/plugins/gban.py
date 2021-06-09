@@ -92,6 +92,12 @@ async def gban(userbot):
             return await SkyhawkBot.edit(
                 f"`First Grow Some Balls To Gban My Creater🤫🚶`"
             )
+        
+    if user:
+        if user.id == 849402889:
+            return await SkyhawkBot.edit(
+                f"`How Can I Gban My Peru Sar`"
+            )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
         except:
@@ -159,6 +165,12 @@ async def gunban(userbot):
         if user.id == 1828445452 or user.id == 1725097624 or user.id == 801842409:
             return await SkyhawkBot.edit(
                 f"`First Grow Some Balls To Ungban My Creater🤫🚶`"
+            )
+        
+    if user:
+        if user.id == 849402889:
+            return await SkyhawkBot.edit(
+                f"`How Can I Ungban My Peru Sar ! Who Can't Be Gbanned `"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
