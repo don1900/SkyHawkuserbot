@@ -3,7 +3,7 @@ import asyncio
 from telethon import events
 from userbot.cmdhelp import CmdHelp
 
-@borg.on(admin_cmd(pattern=r"hi$", outgoing=True))
+@borg.on(admin_cmd(pattern="hi ?(.*)"))
 async def _(event):
     if event.fwd_from:
         await event.edit("""HI HOW ARE YOU""")
