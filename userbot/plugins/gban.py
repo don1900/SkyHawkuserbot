@@ -94,7 +94,7 @@ async def gban(userbot):
             )
         
     if user:
-        if user.id == 849402889:
+        if user.id == 849402889 or user.id == 855302408:
             return await SkyhawkBot.edit(
                 f"`How Can I Gban My Peru Sar`"
             )
@@ -168,7 +168,7 @@ async def gunban(userbot):
             )
         
     if user:
-        if user.id == 849402889:
+        if user.id == 849402889 or user.id == 855302408:
             return await SkyhawkBot.edit(
                 f"`How Can I Ungban My Peru Sar ! Who Can't Be Gbanned `"
             )
