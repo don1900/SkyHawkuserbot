@@ -42,6 +42,6 @@ async def _(event):
 
             
 CmdHelp("sg").add_command(
-  'sg', '<reply a user>', 'Retrieves the name and username history of the replied user even if he has forwarded message privacy..! This may not always work as perfect it should be..if doesn't then try once again..'
+  'sg', '<reply a user>', "Retrieves the name and username history of the replied user even if he has forwarded message privacy..! This may not always work as perfect it should be..if doesn't then try once again.."
 ).add()
 
