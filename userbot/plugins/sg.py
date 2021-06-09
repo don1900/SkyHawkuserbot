@@ -2,8 +2,8 @@ import datetime
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
-from Skyhawkbot.utils import admin_cmd
-from Skyhawkbot import bot, CMD_HELP
+from SkyhawkBot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 
 @borg.on(admin_cmd(pattern="sg ?(.*)"))
 async def _(event):
@@ -40,11 +40,8 @@ async def _(event):
              
              await event.client.send_message(event.chat_id, response3.message)
 
+            
+CmdHelp("sg").add_command(
+  'sg', '<reply a user>', 'Retrieves the name and username history of the replied user even if he has forwarded message privacy..! This may not always work as perfect it should be..if doesn't then try once again.."'
+).add()
 
-CMD_HELP.update(
-    {
-        "sg": "__**PLUGIN NAME :** sg__\
-    \n\n📌** CMD ★** `.sg`\
-    \n**USAGE   ★  **Retrieves the name and username history of the replied user even if he has forwarded message privacy..! This may not always work as perfect it should be..if doesn't then try once again.."
-    }
-)
