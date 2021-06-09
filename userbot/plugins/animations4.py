@@ -162,7 +162,13 @@ async def hi(event):
     if event.fwd_from:
         return
     await edit_or_reply(event, "🌺✨✨🌺✨🌺🌺🌺\n🌺✨✨🌺✨✨🌺✨\n🌺🌺🌺🌺✨✨🌺✨\n🌺✨✨🌺✨✨🌺✨\n🌺✨✨🌺✨🌺🌺🌺\n☁☁☁☁☁☁☁☁")
-
+    
+@bot.on(admin_cmd(pattern=r"hii", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"hii", allow_sudo=True))
+async def hii(event):
+    if event.fwd_from:
+        return
+    await edit_or_reply(event, "🌺✨✨🌺✨🌺🌺🌺\n🌺✨✨🌺✨✨🌺✨\n🌺🌺🌺🌺✨✨🌺✨\n🌺✨✨🌺✨✨🌺✨\n🌺✨✨🌺✨🌺🌺🌺\n☁☁☁☁☁☁☁☁")
 
 @bot.on(admin_cmd(pattern=r"cheer", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"cheer", allow_sudo=True))
@@ -276,6 +282,8 @@ CmdHelp("animations4").add_command(
   "cheer", None, "Use and see"
 ).add_command(
   "hi", None, "Use and see"
+).add_command(
+  "hii", None, "Use and see"
 ).add_command(
   "city", None, "Use and see"
 ).add_command(
