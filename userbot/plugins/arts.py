@@ -566,8 +566,8 @@ async def bluedevilindia(event):
     await edit_or_reply(event, O)
 
 
-@bot.on(admin_cmd(pattern=r"wc$"))
-@bot.on(sudo_cmd(pattern="wc$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"welcome$"))
+@bot.on(sudo_cmd(pattern="welcome$", allow_sudo=True))
 async def bluedevilwelcome(welcome):
     if welcome.fwd_from:
         return
@@ -627,7 +627,7 @@ CmdHelp("arts").add_command(
 ).add_command(
   'india', None, 'Use and see'
 ).add_command(
-  'wc', None, 'Use and see'
+  'welcome', None, 'Use and see'
 ).add_command(
   'snk', None, 'Use and see'
 ).add_command(
