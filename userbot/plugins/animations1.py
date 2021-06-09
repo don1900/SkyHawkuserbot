@@ -83,8 +83,8 @@ async def _(event):
             "**😈YOU KNOW THAT I'M A GOOD PERSON. BUT DON'T GIVE ME REASON TO SHOW MY EVIL SIDE😈**"
         )
         
-@bot.on(admin_cmd(pattern="gnt$", outgoing=True))
-@bot.on(sudo_cmd(pattern="gnt$", allow_sudo=True))
+@bot.on(admin_cmd(pattern="gn$", outgoing=True))
+@bot.on(sudo_cmd(pattern="gn$", allow_sudo=True))
 async def gn(event):
     if event.fwd_from:
         return
@@ -92,8 +92,8 @@ async def gn(event):
     )
 
 
-@bot.on(admin_cmd(pattern="gmg$", outgoing=True))
-@bot.on(sudo_cmd(pattern="gmg$", allow_sudo=True))
+@bot.on(admin_cmd(pattern="gm$", outgoing=True))
+@bot.on(sudo_cmd(pattern="gm$", allow_sudo=True))
 async def gm(event):
     if event.fwd_from:
         return
@@ -139,6 +139,7 @@ async def _(event):
     animation_interval = 3
     animation_ttl = range(18)
     event = await edit_or_reply(event, "Calling Pavel Durov (ceo of telegram)......")
+    await asyncio.sleep(0.5)
     animation_chars = [
         "`Connecting To Raj Bhawan`",
         "`Call Connected.`",
@@ -217,7 +218,7 @@ async def _(event):
         "What The",
         "What The F",
         "What The F Brah",
-        "What The F Brah\nhttps://telegra.ph/file/f3b760e4a99340d331f9b.jpg",
+        "[What The F Brah] (https://telegra.ph/file/f3b760e4a99340d331f9b.jpg)",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -419,9 +420,9 @@ CmdHelp("animations1").add_command(
 ).add_command(
   'evil', None, 'Wanna show your evilness?'
 ).add_command(
-  'gmg', None, 'Cool Good Morning Animation'
+  'gm', None, 'Cool Good Morning Animation'
 ).add_command(
-  'gnt', None, 'Cool Good Night Animation'
+  'gn', None, 'Cool Good Night Animation'
 ).add_command(
   'muth', None, 'Fapping✊'
 ).add()
