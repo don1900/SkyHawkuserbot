@@ -9,7 +9,7 @@ from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="logo ?(.*)"))
 async def _(event):
-    xx = await eor(event, get_string("com_1"))
+    xx = await(event, get_string("com_1"))
     name = event.pattern_match.group(1)
     if not name:
         await eod(xx, "`Give a Name!`")
