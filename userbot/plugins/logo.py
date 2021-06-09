@@ -25,7 +25,7 @@ async def _(event):
                 bg_ = await temp.download_media()
     else:
         pics = []
-        async for i in Skyhawk.iter_messages(
+        async for i in SkyhawkBot.iter_messages(
             "@bg_for_logos", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
@@ -36,7 +36,7 @@ async def _(event):
         font_ = fpath_ + f
     if not bg_:
         pics = []
-        async for i in Skyhawk.iter_messages(
+        async for i in SkyhawkBot.iter_messages(
             "@bg_for_logos", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
