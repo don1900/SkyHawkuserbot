@@ -649,7 +649,7 @@ CmdHelp("arts").add_command(
 ).add_command(
   'strump', '<text>', 'Send your text in trump art'
 ).add_command(
-  'china', '<text>', 'Send your text in china art'
+  'schina', '<text>', 'Send your text in china art'
 ).add_command(
   'sshit', None, 'Send a art in "Ahh shit. Here we go again"'
 ).add()
