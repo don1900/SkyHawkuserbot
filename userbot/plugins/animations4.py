@@ -156,8 +156,8 @@ async def test(event):
     )
 
 
-@bot.on(admin_cmd(pattern=r"hii", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"hii", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"hi", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"hi", allow_sudo=True))
 async def hi(event):
     if event.fwd_from:
         return
@@ -275,7 +275,7 @@ CmdHelp("animations4").add_command(
 ).add_command(
   "cheer", None, "Use and see"
 ).add_command(
-  "hii", None, "Use and see"
+  "hi", None, "Use and see"
 ).add_command(
   "city", None, "Use and see"
 ).add_command(
