@@ -31,6 +31,9 @@ async def _(event):
             pics.append(i)
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
+        fpath_ = "./resources/fonts/"
+        f = random.choice(os.listdir(fpath_))
+        font_ = fpath_ + f    
     if not bg_:
         pics = []
         async for i in SkyhawkBot.iter_messages(
