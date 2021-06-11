@@ -64,7 +64,7 @@ async def check_bot_started_users(user, event):
         await event.client.send_message(BOTLOG_CHATID, notification)
 
 
-@SkyHawkbot.bot_cmd(pattern=f"^/start({botusername})?([\s]+)?$",incoming=True,func=lambda e: e.is_private,)
+@Skyhawkbot.bot_cmd(pattern=f"^/start({botusername})?([\s]+)?$",incoming=True,func=lambda e: e.is_private,)
 async def bot_start(event):
     chat = await event.get_chat()
     user = await catub.get_me()
@@ -104,7 +104,7 @@ async def bot_start(event):
         await check_bot_started_users(chat, event)
 
 
-@SkyHawkbot.bot_cmd(incoming=True, func=lambda e: e.is_private)
+@Skyhawkbot.bot_cmd(incoming=True, func=lambda e: e.is_private)
 async def bot_pms(event):  # sourcery no-metrics
     chat = await event.get_chat()
     if check_is_black_list(chat.id):
@@ -250,7 +250,7 @@ async def handler(event):
                 LOGS.error(str(e))
 
 
-@catub.bot_cmd(
+@Skyhawkbot.bot_cmd(
     pattern=f"^/uinfo$",
     from_users=Config.OWNER_ID,
 )
