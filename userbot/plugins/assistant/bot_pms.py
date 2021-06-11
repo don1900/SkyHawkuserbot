@@ -64,7 +64,7 @@ async def check_bot_started_users(user, event):
         await event.client.send_message(BOTLOG_CHATID, notification)
 
 
-@SkyHawkbot.bot_cmd(pattern="start ?(/*))",incoming=True,func=lambda e: e.is_private,)
+@SkyHawkbot.bot_cmd(pattern=f"^/start({botusername})?([\s]+)?$",incoming=True,func=lambda e: e.is_private,)
 async def bot_start(event):
     chat = await event.get_chat()
     user = await catub.get_me()
