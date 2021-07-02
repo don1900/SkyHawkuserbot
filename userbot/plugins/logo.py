@@ -1,9 +1,11 @@
 import os
 import random
 import time
-
+from userbot import cmdhelp
+from userbot.cmdhelp import CmdHelp
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocument
+from SkyhawkBot.utils import admin_cmd,sudo_cmd
 
 from . import *
 
@@ -79,3 +81,7 @@ async def get_font_file(client, channel_id):
     font_file_message = random.choice(font_file_message_s)
 
     return await client.download_media(font_file_message)
+
+CmdHelp("logo").add_command(
+ 'logo', None, 'Creats A Logo...'
+).add()
