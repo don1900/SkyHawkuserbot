@@ -6,7 +6,6 @@ from userbot.cmdhelp import CmdHelp
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocument
 from SkyhawkBot.utils import admin_cmd,sudo_cmd
-
 from . import *
 
 
@@ -15,17 +14,17 @@ PICS_STR = []
 @bot.on(admin_cmd(pattern=r"logo ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(skyhawkevent):
-    event = await eor(skyhawkevent, "Processing.....")
+    event = await eor(skyhawkevent, "`Processing.....`")
     fnt = await get_font_file(skyhawkevent.client, "@Lionfonts")
     if skyhawkevent.reply_to_msg_id:
-        rply = await skyhawkvent.get_reply_message()
+        rply = await skyhawkevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
         async for i in bot.iter_messages("@skyhawkxlogo", filter=InputMessagesFilterPhotos):
-         PICS_STR.append(i)
+    	    PICS_STR.append(i)
         pic = random.choice(PICS_STR)
         logo_ = await pic.download_media()
-    text = skyhawkevent.pattern_match.group(1)
+    text = hellevent.pattern_match.group(1)
     if len(text) <= 8:
         font_size_ = 150
         strik = 10
@@ -56,12 +55,12 @@ async def lg1(skyhawkevent):
     draw.text(
         (w_, h_), text, font=font, fill="white", stroke_width=strik, stroke_fill="black"
     )
-    file_name = "LionBot.png"
+    file_name = "HellBot.png"
     img.save(file_name, "png")
     await bot.send_file(
-        skyhawkevent.chat_id,
+        hellevent.chat_id,
         file_name,
-        caption=f"**Made By**: [Skyhawk Userbot](t.me/SkyHawK_Updates)",
+        caption=f"**Made By :** {hell_mention}",
     )
     await event.delete()
     try:
@@ -69,7 +68,7 @@ async def lg1(skyhawkevent):
         os.remove(fnt)
         os.remove(logo_)
     except:
-     pass
+    	pass
 
 
 async def get_font_file(client, channel_id):
@@ -81,6 +80,7 @@ async def get_font_file(client, channel_id):
     font_file_message = random.choice(font_file_message_s)
 
     return await client.download_media(font_file_message)
+
 
 CmdHelp("logo").add_command(
  'logo', None, 'Creats A Logo...'
