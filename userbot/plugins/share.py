@@ -3,6 +3,7 @@
 
 from userbot.utils import admin_cmd
 from telethon import events
+xbot = tgbot
 def handler():
   k = os.environ.get("COMMAND_HAND_LER", ".")
   return k
