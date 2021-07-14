@@ -1,6 +1,6 @@
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-
+# credits - SkyhawkBot
 from SkyhawkBot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
