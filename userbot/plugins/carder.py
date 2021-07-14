@@ -5,7 +5,7 @@ from telethon import functions, types, events
 from telethon.tl.functions.messages import DeleteHistoryRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
-# COPY WITH CREDITS 
+
 from SkyhawkBot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from SkyhawkBot import CmdHelp, bot as SkyhawkBot
 
@@ -19,9 +19,9 @@ async def _(Skyhawkevent):
     Skyhawkname = Skyhawkcc.name()
     Skyhawkadre = Skyhawkcc.address()
     Skyhawkcard = Skyhawkcc.credit_card_full()
-    
+
     await edit_or_reply(Skyhawkevent, f"__**👤 NAME :- **__\n`{Skyhawkname}`\n\n__**🏡 ADDRESS :- **__\n`{Skyhawkadre}`\n\n__**💸 CARD :- **__\n`{Skyhawkcard}`")
-    
+
 
 @SkyhawkBot.on(admin_cmd(pattern="bin ?(.*)"))
 @SkyhawkBot.on(sudo_cmd(pattern="bin ?(.*)", allow_sudo=True))
@@ -63,8 +63,8 @@ async def _(event):
           else: 
              await event.delete()
              await event.client.send_message(event.chat_id, response.message)
-    
-    
+
+
 @SkyhawkBot.on(admin_cmd(pattern="key ?(.*)"))
 @SkyhawkBot.on(sudo_cmd(pattern="key ?(.*)", allow_sudo=True))
 async def _(event):
@@ -84,8 +84,8 @@ async def _(event):
           else: 
              await event.delete()
              await event.client.send_message(event.chat_id, response.message)
- 
-  
+
+
 @SkyhawkBot.on(admin_cmd(pattern="iban ?(.*)"))
 @SkyhawkBot.on(sudo_cmd(pattern="iban ?(.*)", allow_sudo=True))
 async def _(event):
@@ -106,7 +106,7 @@ async def _(event):
              await event.delete()
              await event.client.send_message(event.chat_id, response.message)
 
-    
+
 @SkyhawkBot.on(admin_cmd(pattern="ccheck ?(.*)"))
 @SkyhawkBot.on(sudo_cmd(pattern="ccheck ?(.*)", allow_sudo=True))
 async def _(event):
@@ -126,8 +126,8 @@ async def _(event):
           else: 
              await event.delete()
              await event.client.send_message(event.chat_id, response.message)
-             
-             
+
+
 @SkyhawkBot.on(admin_cmd(pattern="ccbin ?(.*)"))
 @SkyhawkBot.on(sudo_cmd(pattern="ccbin ?(.*)", allow_sudo=True))
 async def _(event):
@@ -148,7 +148,7 @@ async def _(event):
              await event.delete()
              await event.client.send_message(event.chat_id, response.message)
 
-    
+
 CmdHelp("carder").add_command(
   "gencc", None, "Generates fake cc..."
 ).add_command(
