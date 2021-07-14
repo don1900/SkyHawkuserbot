@@ -4,6 +4,7 @@ Available Commands:
 .emoji apple
 .emoji :/
 .emoji -_-"""
+# credits SkyhawkBot
 import asyncio
 
 from SkyhawkBot.utils import admin_cmd
