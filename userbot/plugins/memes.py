@@ -547,7 +547,7 @@ async def fun(e):
             await edit_or_reply(e, t)
 
 
-from Userbot import get_help
+
 @bot.on(admin_cmd(outgoing=True))
 @bot.on(sudo_cmd(pattern="cry$", allow_sudo=True))
 async def cry(e):
