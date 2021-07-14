@@ -1,6 +1,6 @@
 # COPYRIGHT © 2021-2022 BY LEGENDX22
 # COPY WITH CREDITS
-
+# USING ON Skyhawk 
 from userbot.utils import admin_cmd
 from telethon import events
 xbot = tgbot
