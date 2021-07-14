@@ -1,5 +1,6 @@
 # Echo remastered by @Kraken_The_BadAss for hellbot
 # Codes by @mrconfused
+# credits SkyhawkBot
 # Kang with credits
 
 import asyncio
