@@ -19,7 +19,7 @@ async def amazing (event):
   print ("share plug-in fired")
   await inline[0].click(event.chat_id)
   await event.delete()
-
+# CREDIT - SkyhawkBot 
 @xbot.on(events.InlineQuery(pattern='share'))
 async def share_inline(event):
   text = event.text.split("|")
