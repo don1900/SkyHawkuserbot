@@ -1,5 +1,5 @@
 """SkyhawkBot Help Command"""
-
+# Skyhawk copy with credits 
 from userbot import *
 from userbot import CMD_HELP
 from SkyhawkBot.utils import *
