@@ -12,7 +12,7 @@ from pathlib import Path
 import asyncio
 import telethon.utils
 os.system("pip install -U telethon")
-print ("telethon latest version downloaded")
+
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
