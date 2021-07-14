@@ -22,5 +22,5 @@ async def broadcast(event):
   await event.edit(f' done = {succ}\n fail = {fail}')
   
   CmdHelp("gcast").add_command(
- 'gcast', None, 'Globally Cast The Message'
+ 'gcast', None, 'Globally Cast The Message In Connected Chats'
   ).add()
