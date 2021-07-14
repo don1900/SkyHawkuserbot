@@ -1,4 +1,3 @@
-
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -22,16 +21,16 @@ from telethon.tl.functions.channels import JoinChannelRequest
 
 from userbot import *
 from userbot.cmdhelp import *
-from TgxBot.utils import *
+from SkyhawkBot.utils import *
 from userbot.Config import Config
 
-Tgx_row = Config.BUTTONS_IN_HELP
-Tgx_emoji = Config.EMOJI_IN_HELP
+Skyhawk_row = Config.BUTTONS_IN_HELP
+Skyhawk_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
-# TgxUserbot
+# SkyhawkUserbot
 
 def button(page, modules):
-    Row = Tgx_row
+    Row = Skyhawk_row
     Column = 3
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
@@ -44,7 +43,7 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"{Tgx_emoji} " + pair  + f" {Tgx_emoji}", data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"{Skyhawk_emoji} " + pair  + f" {Skyhawk_emoji}", data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
@@ -52,18 +51,18 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"⬅️𝙱𝙰𝙲𝙺 {Tgx_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"⬅️𝙱𝙰𝙲𝙺 {Skyhawk_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"{Tgx_emoji} ✖️𝙲𝙻𝙾𝚂𝙴✖️ {Tgx_emoji}", data="close"
+               f"{Skyhawk_emoji} ✖️𝙲𝙻𝙾𝚂𝙴✖️ {Skyhawk_emoji}", data="close"
             ),
             custom.Button.inline(
-               f"{Tgx_emoji} 𝙽𝙴𝚇𝚃➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{Skyhawk_emoji} 𝙽𝙴𝚇𝚃➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
     return [max_pages, buttons]
-    # Changing this line may give error in bot as i added some special cmds in TgxUserbot channel to get this module work...
+    # Changing this line may give error in bot as i added some special cmds in SkyhawkUserbot channel to get this module work...
 
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -72,12 +71,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@TgxUserbot":
+        if event.query.user_id == bot.uid and query == "@SkyhawkUserbot":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**▪Tgx 🦅 𝚄𝚂𝙴𝚁𝙱𝙾𝚃▪**\n\n__𝚃𝚘𝚝𝚊𝚕 𝚙𝚕𝚞𝚐𝚒𝚗𝚜 𝚒𝚗 𝚢𝚘𝚞𝚛 𝚞𝚜𝚎𝚛𝚋𝚘𝚝__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**▪SKyHawk 🦅 𝚄𝚂𝙴𝚁𝙱𝙾𝚃▪**\n\n__𝚃𝚘𝚝𝚊𝚕 𝚙𝚕𝚞𝚐𝚒𝚗𝚜 𝚒𝚗 𝚢𝚘𝚞𝚛 𝚞𝚜𝚎𝚛𝚋𝚘𝚝__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -92,17 +91,17 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@FURIOUS_X_Y",
-                text="""**Hey! This is [Tgx Userbot.](https://t.me/Tgx_Updates) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [Skyhawk Userbot.](https://t.me/SkyHawK_Updates) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Tgx_Updates"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/SkyHawK_Updates"),
                         custom.Button.url(
-                            "⚡ 👥 GROUP 👥", "https://t.me/TgxSupport"
+                            "⚡ 👥 GROUP 👥", "https://t.me/SkyHawkSupport"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "🔥 REPO 🔥", "https://github.com/don1900/Tgx"),
+                            "🔥 REPO 🔥", "https://github.com/don1900/SkyHawk"),
                     ],
                 ],
                 link_preview=False,
@@ -113,14 +112,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "DEKH KYA RAHE HO YRR JAO AUR APNA Tgx BOT DEPLOY KARO AUR MAJA LO 🤓",
+                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO 🤓",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**𝚈𝙾𝚄𝚁** [ꜱᴋʏʜᴀᴡᴋ ᴜꜱᴇʀʙᴏᴛ](https://t.me/Tgx_Updates) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**𝚈𝙾𝚄𝚁** [ꜱᴋʏʜᴀᴡᴋ ᴜꜱᴇʀʙᴏᴛ](https://t.me/SkyHawK_Updates) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -128,12 +127,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
-            await delete_Tgx(event,
-              "**Tgx Help Menu**\n\n         **[(ℂ)𝕊𝕜𝕪ℍ𝕒𝕨𝕜™](t.me/Tgx_Updates)**", 5, link_preview=False
+            await delete_Skyhawk(event,
+              "**Skyhawk Help Menu**\n\n         **[(ℂ)𝕊𝕜𝕪ℍ𝕒𝕨𝕜™](t.me/SkyHawK_Updates)**", 5, link_preview=False
             )
         else:
-            Tgx_alert = "Bas laga liya dimaag? Itni der se tip tip kar rahe ho. Jao khud ka bana lo na yrr. 𝕊𝕜𝕪ℍ𝕒𝕨𝕜™"
-            await event.answer(Tgx_alert, cache_time=0, alert=True)
+            Skyhawk_alert = "Bas laga liya dimaag? Itni der se tip tip kar rahe ho. Jao khud ka bana lo na yrr. 𝕊𝕜𝕪ℍ𝕒𝕨𝕜™"
+            await event.answer(Skyhawk_alert, cache_time=0, alert=True)
           
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
@@ -141,7 +140,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "DEKH KYA RAHE HO YRR JAO AUR APNA Tgx BOT DEPLOY KARO AUR MAJA LO (ℂ)𝕊𝕜𝕪ℍ𝕒𝕨𝕜™ ",
+                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO (ℂ)𝕊𝕜𝕪ℍ𝕒𝕨𝕜™ ",
                 cache_time=0,
                 alert=True,
             )
@@ -161,7 +160,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
 
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([custom.Button.inline(f"{Tgx_emoji} 𝐁𝐀𝐂𝐊 {Tgx_emoji}", data=f"page({page})")])
+        buttons.append([custom.Button.inline(f"{Skyhawk_emoji} 𝐁𝐀𝐂𝐊 {Skyhawk_emoji}", data=f"page({page})")])
         await event.edit(
             f"**🗂 Module:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
             buttons=buttons,
@@ -174,7 +173,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "DEKH KYA RAHE HO YRR JAO AUR APNA Tgx BOT DEPLOY KARO AUR MAJA LO 𝕊𝕜𝕪ℍ𝕒𝕨𝕜™ ",
+                "DEKH KYA RAHE HO YRR JAO AUR APNA Skyhawk BOT DEPLOY KARO AUR MAJA LO 𝕊𝕜𝕪ℍ𝕒𝕨𝕜™ ",
                 cache_time=0,
                 alert=True,
             )
@@ -211,7 +210,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         await event.edit(
             result,
             buttons=[
-                custom.Button.inline(f"{Tgx_emoji} 𝙱𝙰𝙲𝙺 {Tgx_emoji}", data=f"Information[{page}]({cmd})")
+                custom.Button.inline(f"{Skyhawk_emoji} 𝙱𝙰𝙲𝙺 {Skyhawk_emoji}", data=f"Information[{page}]({cmd})")
             ],
             link_preview=False,
         )
