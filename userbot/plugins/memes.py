@@ -624,7 +624,7 @@ async def vapor(vpr):
 @bot.on(sudo_cmd(pattern=f"repo", allow_sudo=True))
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await edit_or_reply(e, "Click [here](https://github.com/PyCodents/SkyhawkBot) to open this 🔥**Lit AF!!**🔥 __SkyhawkBot__ Repo.. Join channel :- @SkyhawkUserbot")
+        await edit_or_reply(e, "Click [here](https://github.com/don1900/SkyHawk) to open this 🔥**Lit AF!!**🔥 __SkyhawkBot__ Repo.. Join channel :- @SkyHawK_Updates")
 
 
 @bot.on(admin_cmd(pattern="str(?: |$)(.*)", outgoing=True))
