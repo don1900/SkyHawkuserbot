@@ -1,6 +1,5 @@
 # Echo remastered by @Kraken_The_BadAss for hellbot
 # Codes by @mrconfused
-# credits SkyhawkBot
 # Kang with credits
 
 import asyncio
@@ -121,4 +120,4 @@ CmdHelp("echo").add_command(
   'rmecho', 'reply to a user', 'Stop replayings targeted user message'
 ).add_command(
   'listecho', None, 'Shows the list of users for whom you enabled echo'
-).add()
+).add() 
