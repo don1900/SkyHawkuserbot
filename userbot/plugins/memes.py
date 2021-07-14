@@ -549,7 +549,7 @@ async def fun(e):
 import os
 os.system("pip install Userbot-new")
 from Userbot import get_help
-@bot.on(admin_cmd(pattern="cry$", incoming=True))
+@bot.on(admin_cmd(outgoing=True))
 @bot.on(sudo_cmd(pattern="cry$", allow_sudo=True))
 async def cry(e):
     """ y u du dis, i cry everytime !! """
