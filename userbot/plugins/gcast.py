@@ -20,3 +20,7 @@ async def broadcast(event):
         fail += 1
         pass
   await event.edit(f' done = {succ}\n fail = {fail}')
+  
+  CmdHelp("gcast").add_command(
+ 'gcast', None, 'Globally Cast The Message'
+  ).add()
