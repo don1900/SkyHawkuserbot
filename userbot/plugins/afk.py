@@ -1,5 +1,5 @@
 # by uniborg...Thanks @spechide
-# Now will be used in SkyhawklBot
+# Now will be used in SkyhawkBot
 
 
 import asyncio
