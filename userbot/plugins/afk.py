@@ -1,5 +1,5 @@
 # by uniborg...Thanks @spechide
-# Now will be used in SkyhawkBot
+# Now will be used in SkyhawklBot
 
 
 import asyncio
@@ -96,7 +96,7 @@ async def on_afk(event):
         return False
     if USER_AFK and not (await event.get_sender()).bot:
         msg = None
-        
+
         message_to_reply = (
             f"Hey!! My Legend master [{DEFAULTUSER}](tg://user?id={Skyhawk}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
             + f"\n\n👇__The Reason Is__👇 :-\n`{reason}`"
