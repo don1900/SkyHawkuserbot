@@ -5,7 +5,7 @@ from telethon import functions, types, events
 from telethon.tl.functions.messages import DeleteHistoryRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
-
+# COPY WITH CREDITS 
 from SkyhawkBot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from SkyhawkBot import CmdHelp, bot as SkyhawkBot
 
