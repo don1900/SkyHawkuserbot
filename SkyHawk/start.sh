@@ -28,5 +28,5 @@ echo """
 MY SkyhawkBOT!!
 
 """
-
+echo "starting SkyhawkBot with telethon"
 python3 -m userbot
