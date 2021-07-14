@@ -2,7 +2,7 @@
 .app <app_name> to fetch app details.
 .appr <app_name>  to fetch app details with Xpl0iter request link.
 .mods <app_name> to get the premier app from telegram if available.."""
-# credits SkyhawkBot
+
 import bs4
 import requests
 
