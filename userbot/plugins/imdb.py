@@ -5,7 +5,7 @@
 Imdb Module
 .imdb
 """
-# credits - SkyhawkBot
+
 import re
 
 import bs4
