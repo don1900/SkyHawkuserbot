@@ -1,6 +1,6 @@
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-# credits - SkyhawkBot
+
 from SkyhawkBot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
@@ -46,4 +46,4 @@ async def _(event):
 
 CmdHelp("circle").add_command(
   'circle', '<reply to a 4×4(square) media>', 'Converts the replied square media into circle telegram video'
-).add()
+).add() 
