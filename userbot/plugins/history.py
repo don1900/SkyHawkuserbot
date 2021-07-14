@@ -1,4 +1,5 @@
 from telethon import events
+# credits SkyhawkBot
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from SkyhawkBot import bot, CmdHelp
