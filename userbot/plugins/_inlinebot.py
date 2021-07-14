@@ -90,24 +90,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 link_preview=True,
             )
         else:
-            result = builder.article(
-                "@FURIOUS_X_Y",
-                text="""**Hey! This is [Skyhawk Userbot.](https://t.me/SkyHawK_Updates) \nYou can know more about me from the links given below 👇**""",
-                buttons=[
-                    [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/SkyHawK_Updates"),
-                        custom.Button.url(
-                            "⚡ 👥 GROUP 👥", "https://t.me/SkyHawkSupport"
-                        ),
-                    ],
-                    [
-                        custom.Button.url(
-                            "🔥 REPO 🔥", "https://github.com/don1900/SkyHawk"),
-                    ],
-                ],
-                link_preview=False,
-            )
-        await event.answer([result] if result else None)
+            pass
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
     async def page(event):
