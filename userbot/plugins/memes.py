@@ -2,8 +2,6 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.b (the "License");
 # you may not use this file except in compliance with the License.
-# credita  - SkyhawkBot
-# Copy with credits
 
 """ Userbot module for having some fun with people. """
 
@@ -548,7 +546,7 @@ async def fun(e):
 
 
 
-@bot.on(admin_cmd(outgoing=True))
+@bot.on(admin_cmd(pattern="cry$", outgoing=True))
 @bot.on(sudo_cmd(pattern="cry$", allow_sudo=True))
 async def cry(e):
     """ y u du dis, i cry everytime !! """
@@ -624,7 +622,7 @@ async def vapor(vpr):
 @bot.on(sudo_cmd(pattern=f"repo", allow_sudo=True))
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await edit_or_reply(e, "Click [here](https://github.com/don1900/SkyHawk) to open this 🔥**Lit AF!!**🔥 __SkyhawkBot__ Repo.. Join channel :- @SkyHawK_Updates")
+        await edit_or_reply(e, "Click [here](https://github.com/PyCodents/SkyhawkBot) to open this 🔥**Lit AF!!**🔥 __SkyhawkBot__ Repo.. Join channel :- @SkyhawkUserbot")
 
 
 @bot.on(admin_cmd(pattern="str(?: |$)(.*)", outgoing=True))
