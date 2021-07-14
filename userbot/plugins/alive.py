@@ -1,3 +1,4 @@
+# Credits Skyhawk
 import time
 from userbot import *
 from SkyhawkBot.utils import *
