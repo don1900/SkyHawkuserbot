@@ -7,7 +7,7 @@ async def broadcast(event):
        continue
      fail = 0
      succ = 0
-     chat = PROBOYX.id
+     chat = Don19.id
      if Don19.is_channel:
        pass
      try:
