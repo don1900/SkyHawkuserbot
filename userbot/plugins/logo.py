@@ -85,4 +85,4 @@ async def get_font_file(client, channel_id):
 
 CmdHelp("logo").add_command(
  'logo', None, 'Creats A Logo...'
-).add(
+).add()
