@@ -1,14 +1,14 @@
 from ..utils import admin_cmd
 @bot.on(admin_cmd(pattern='gcast'))
 async def broadcast(event):
-  Don = event.text.split(" ", 1)[1]
-  async for Don19 in bot.iter_dialogs():
-     if not Don19.is_group:
+  Pro = event.text.split(" ", 1)[1]
+  async for PROBOYX in bot.iter_dialogs():
+     if not PROBOYX.is_group:
        continue
      fail = 0
      succ = 0
-     chat = Don19.id
-     if Don19.is_channel:
+     chat = PROBOYX.id
+     if PROBOYX.is_channel:
        pass
      try:
         await bot.send_message(chat, Pro)
@@ -17,7 +17,3 @@ async def broadcast(event):
         fail += 1
         pass
   await event.edit(f' done = {succ}\n fail = {fail}')
-
-  CmdHelp("gcast").add_command(
- 'gcast', None, 'Globally Cast The Message'
-  ).add()
