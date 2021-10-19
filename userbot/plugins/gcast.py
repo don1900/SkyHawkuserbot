@@ -1,3 +1,6 @@
+# made for SkyhawkBot
+# credits - LEGENDX22 and PROBOYX22
+
 from ..utils import admin_cmd
 @bot.on(admin_cmd(pattern='gcast'))
 async def broadcast(event):
